@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from 'next/image';
-import Hero1 from '/public/College.jpeg'; 
+import Hero1 from '/public/Hero1.jpeg'; 
 import Hero2 from '/public/Hero2.jpeg'
 
 const Hero = () => {
@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="relative overflow-hidden rounded-lg h-64 sm:h-80 lg:h-[600px]">
-            <Swiper
+          <Swiper
               navigation={true}
               modules={[Navigation]}
               className="h-full w-full"
@@ -24,16 +24,18 @@ const Hero = () => {
                 <Image
                   alt="Slide 1"
                   src={Hero1}
-                 layout="fill" 
-                  objectFit="cover"
+                  className="w-full h-full object-fit"
+                  width={600}  // Set the fixed width
+                  height={400} // Set the fixed height
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <Image
                   alt="Slide 2"
                   src={Hero2}
-                  layout="fill" 
-                  objectFit="fill"
+                  className="w-full h-full object-fit"
+                  width={600}  // Set the fixed width
+                  height={400} // Set the fixed height
                 />
               </SwiperSlide>
               {/* Add more SwiperSlides here as needed */}
