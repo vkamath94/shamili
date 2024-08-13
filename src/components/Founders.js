@@ -12,6 +12,7 @@ const oswald = Oswald({
 const Founders = () => {
   return (
     <>
+       <div className='mt-8'></div>
       <h1 className={`${oswald.className} text-3xl font-bold sm:text-4xl text-center`}>Founders</h1>
       <div className='mt-8'></div>
       <div className="flex flex-wrap justify-center gap-8 px-4">
@@ -25,9 +26,10 @@ const Founders = () => {
               height={256} // Set explicit height
             />
           </div>
-          <h3 className="mt-4 text-lg font-bold text-gray-900 sm:text-xl">Lorem, ipsum dolor.</h3>
+          <h3 className="mt-4 text-lg font-bold text-gray-900 sm:text-xl">Nadoja  Dr. G. Shankar</h3>
           <p className="mt-2 max-w-sm text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
+            President G. Shankar Family Trust(R),<br/>
+            Ambalpady
           </p>
         </a>
 
@@ -41,9 +43,9 @@ const Founders = () => {
               height={256} // Set explicit height
             />
           </div>
-          <h3 className="mt-4 text-lg font-bold text-gray-900 sm:text-xl">Lorem, ipsum dolor.</h3>
+          <h3 className="mt-4 text-lg font-bold text-gray-900 sm:text-xl">Smt.Shalini Shankar</h3>
           <p className="mt-2 max-w-sm text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
+            Correspondent
           </p>
         </a>
       </div>
