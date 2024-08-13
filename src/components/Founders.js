@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { Oswald } from 'next/font/google';
 import Image from 'next/image';
