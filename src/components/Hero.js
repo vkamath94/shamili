@@ -46,7 +46,7 @@ const Hero = () => {
             <p className="mt-4 text-gray-700">
               Experience a nurturing environment where academic excellence meets holistic development. 
               Our institution provides a dynamic curriculum and dedicated faculty, ensuring every 
-              student achieves their highest potential
+              student achieves their highest potential.
             </p>
 
            
