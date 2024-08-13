@@ -27,32 +27,32 @@ const Header = () => {
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
-                  <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                  <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
                     About
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                  <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
                     Careers
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                  <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
                     History
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                  <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                  <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
                     Projects
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                  <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
                     Blog
                   </a>
                 </li>
@@ -83,32 +83,32 @@ const Header = () => {
           <nav aria-label="Global" className="md:hidden">
             <ul className="mt-2 flex flex-col items-start gap-4 text-sm">
               <li>
-                <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
                   About
                 </a>
               </li>
               <li>
-                <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
                   Careers
                 </a>
               </li>
               <li>
-                <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
                   History
                 </a>
               </li>
               <li>
-                <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
                   Services
                 </a>
               </li>
               <li>
-                <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
                   Projects
                 </a>
               </li>
               <li>
-                <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
                   Blog
                 </a>
               </li>
