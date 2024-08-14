@@ -14,10 +14,10 @@ const Founders = () => {
   return (
     <>
        <div className='mt-8'></div>
-      <h1 className={`${oswald.className} text-3xl font-bold sm:text-4xl text-center`}>Founders</h1>
+      <h1 className={`${oswald.className} text-3xl font-bold sm:text-4xl text-center`}>Our Founders</h1>
       <div className='mt-8'></div>
       <div className="flex flex-wrap justify-center gap-8 px-4">
-        <a href="#" className="block flex-shrink-0 w-full sm:w-1/2 lg:w-1/3">
+        <a className="block flex-shrink-0 w-full sm:w-1/2 lg:w-1/3">
           <div className="relative w-full h-64 sm:h-80 lg:h-96 overflow-hidden">
             <Image
               alt="founder1"
