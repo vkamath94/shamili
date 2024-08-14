@@ -6,7 +6,7 @@ export default function CardContainer() {
     <>
     <div className='bg-slate-100'>
     <div className='mt-4'>
-    <h2 className='text-3xl font-bold sm:text-4xl hover:underline flex justify-center'>Subject Combinations</h2>
+    <h2 className='text-2xl font-bold sm:text-3xl hover:underline flex justify-center'>Subject Combinations</h2>
     <div className="flex flex-wrap justify-center gap-4 p-4">
       <div className="w-full sm:w-80 md:w-96 lg:w-1/4">
         <MediaCard 
