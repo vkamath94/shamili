@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <SpeedInsights>
+    
     <html lang="en">
       <body>
         <Header />
@@ -21,6 +21,6 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
     </html>
-    </SpeedInsights>
+    
   );
 }
