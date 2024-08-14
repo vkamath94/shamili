@@ -14,7 +14,7 @@ const Founders = () => {
   return (
     <>
        <div className='mt-8'></div>
-      <h1 className={`${oswald.className} text-3xl font-bold sm:text-4xl text-center`}>Our Founders</h1>
+      <h1 className={`${oswald.className} hover:underline text-3xl font-bold sm:text-4xl text-center`}>Our Founders</h1>
       <div className='mt-8'></div>
       
       <div className="flex flex-wrap justify-center gap-8 px-4">
