@@ -33,27 +33,22 @@ const Header = () => {
                 </li>
                 <li>
                   <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
-                    Careers
+                    Facilities
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
-                    History
+                    Staff
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
-                    Services
+                    Results
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
-                    Blog
+                    Contact Us
                   </a>
                 </li>
               </ul>

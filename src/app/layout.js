@@ -1,6 +1,9 @@
 
+import Header from "@/app/Header";
 import "./globals.css";
 import Head from 'next/head';
+import Footer from "@/app/Footer";
+
 
 export const metadata = {
   title: 'Shamili PU College',
@@ -14,7 +17,11 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body>{children}</body>
+      <body>
+          <Header/>
+            {children}
+          <Footer/>
+      </body>
     </html>
   );
 }

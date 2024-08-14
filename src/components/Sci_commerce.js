@@ -1,5 +1,5 @@
 import React from 'react';
-import MediaCard from './Curriculum'; // Adjust the import path as necessary
+import MediaCard from './wrappers/Combination'; // Adjust the import path as necessary
 
 export default function CardContainer() {
   return (

@@ -1,19 +1,25 @@
 import React from 'react';
-import Header from '../components/Header';
+import Header from './Header';
 import Hero from '../components/Hero';
 import Founders from '../components/Founders';
 import Principal from '@/components/Principal';
-import Subcard from '@/components/Sci_comm';
+import Subcard from '@/components/Sci_commerce';
+import ResultsDisplay from '@/components/ResDisplay';
 
 
 const page = () => {
   return (
     <div>
-      <Header/>
       <Hero/>
       <Founders/>
       <Principal/>
       <Subcard/>
+      <ResultsDisplay 
+        image1="/Result1.jpeg" 
+        image2="/Result2.jpeg" 
+        altText1="Student 1 Result" 
+        altText2="Student 2 Result" 
+      />
     </div>
   )
 }

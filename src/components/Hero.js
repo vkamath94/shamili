@@ -19,13 +19,13 @@ const Hero = () => {
           <Swiper
               navigation={true}
               modules={[Navigation]}
-              className="h-full w-full"
+              className="h-fit w-full"
             >
               <SwiperSlide>
                 <Image
                   alt="Slide 1"
-                  src={Hero1}
-                  className="w-full h-full object-fit"
+                  src={Hero2}
+                  className="w-fit h-fit object-fit"
                   width={600}  // Set the fixed width
                   height={400} // Set the fixed height
                 />
@@ -33,8 +33,8 @@ const Hero = () => {
               <SwiperSlide>
                 <Image
                   alt="Slide 2"
-                  src={Hero2}
-                  className="w-full h-full object-fit"
+                  src={Hero1}
+                  className="w-fit h-fit object-fit"
                   width={600}  // Set the fixed width
                   height={400} // Set the fixed height
                 />
