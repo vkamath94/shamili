@@ -39,13 +39,13 @@ const Header = () => {
                     About
                   </button>
                   {aboutDropdown && (
-                    <ul className="absolute left-0 mt-2 w-40 bg-white shadow-lg">
+                    <ul className="absolute left-0 mt-2 w-40 bg-slate-300 shadow-lg">
                       <li>
                         <a
-                          href="#"
+                          href="/About/Vision"
                           className="block px-4 py-2 text-gray-900 transition hover:bg-gray-100"
                         >
-                          Vision & Mission
+                          Vision
                         </a>
                       </li>
                       <li>
@@ -76,6 +76,11 @@ const Header = () => {
                 </li>
                 <li>
                   <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
+                    Events
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-900 transition hover:text-gray-500/75" href="/Contact">
                     Contact Us
                   </a>
                 </li>
@@ -135,7 +140,7 @@ const Header = () => {
               </li>
               <li>
                 <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
-                  Facilities
+                  Academics
                 </a>
               </li>
               <li>
@@ -143,6 +148,11 @@ const Header = () => {
                   Staff
                 </a>
               </li>
+              <li>
+                  <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
+                    Events
+                  </a>
+                </li>
               <li>
                 <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
                   Results
