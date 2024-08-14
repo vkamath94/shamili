@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Founders from '../components/Founders';
 import Principal from '@/components/Principal';
-import Cirriculum from '@/components/Cirriculum';
+import Curriculum from '@/components/Curriculum';
 
 
 const page = () => {
@@ -13,7 +13,8 @@ const page = () => {
       <Hero/>
       <Founders/>
       <Principal/>
-      <Cirriculum/>
+      <Curriculum/>
+      <Curriculum/>
     </div>
   )
 }
