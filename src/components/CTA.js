@@ -9,7 +9,7 @@ import Image from 'next/image';
 import Hero1 from '/public/Hero1.jpeg'; 
 import Hero2 from '/public/Hero2.jpeg'
 
-const Hero = () => {
+const CTA = () => {
   return (
     <div className="bg-gray-200 min-h-screen">
     <section>
@@ -61,4 +61,4 @@ const Hero = () => {
   );
 }
 
-export default Hero;
+export default CTA;

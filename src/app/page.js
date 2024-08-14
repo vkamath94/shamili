@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Hero from '../components/Hero';
+import Hero from '../components/CTA';
 import Founders from '../components/Founders';
 import Principal from '@/components/Principal';
 import Subcard from '@/components/Sci_commerce';

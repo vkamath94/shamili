@@ -54,7 +54,7 @@ const Footer = () => {
         </li>
 
         <li>
-          <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Staff </a>
+          <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Faculty </a>
         </li>
 
         <li>

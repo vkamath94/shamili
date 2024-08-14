@@ -14,7 +14,7 @@ const Principal = () => {
         <br className="hidden lg:inline-block"/>
       </h1>
       <p className="mb-8 leading-relaxed">Education is crucial in the modern world, serving as the foundation for personal and professional success. While academic excellence is one aspect, proficiency in various fields—such as literature, sports, arts, or adventure—is equally important. Identifying and nurturing one's interests and talents are essential for achieving greatness.
-      <br/><br/>The Pre-University Course is a critical stage where students transition from adolescence to adulthood. This period is marked by self-discovery and decision-making, particularly regarding career paths in science, commerce, or arts. The guidance of parents and teachers is vital during this phase to ensure students make informed choices and remain on the right path.
+      
       <br/><br/>At Shamili PU College, we are committed to nurturing the potential in every student, preparing them not only for academic success but for a fulfilling and ethical life.
       </p>
       

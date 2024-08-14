@@ -5,9 +5,14 @@ import Image from 'next/image';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [aboutDropdown, setAboutDropdown] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const toggleAboutDropdown = () => {
+    setAboutDropdown(!aboutDropdown);
   };
 
   return (
@@ -26,10 +31,33 @@ const Header = () => {
           <div className="md:flex md:items-center md:gap-12">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
-                <li>
-                  <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
+                <li className="relative">
+                  <button
+                    onClick={toggleAboutDropdown}
+                    className="text-gray-900 transition hover:text-gray-500/75"
+                  >
                     About
-                  </a>
+                  </button>
+                  {aboutDropdown && (
+                    <ul className="absolute left-0 mt-2 w-40 bg-white shadow-lg">
+                      <li>
+                        <a
+                          href="#"
+                          className="block px-4 py-2 text-gray-900 transition hover:bg-gray-100"
+                        >
+                          Vision & Mission
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="block px-4 py-2 text-gray-900 transition hover:bg-gray-100"
+                        >
+                          Principal's Message
+                        </a>
+                      </li>
+                    </ul>
+                  )}
                 </li>
                 <li>
                   <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
@@ -38,7 +66,7 @@ const Header = () => {
                 </li>
                 <li>
                   <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
-                    Staff
+                    Faculty
                   </a>
                 </li>
                 <li>
@@ -78,33 +106,51 @@ const Header = () => {
           <nav aria-label="Global" className="md:hidden">
             <ul className="mt-2 flex flex-col items-start gap-4 text-sm">
               <li>
-                <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
+                <button
+                  onClick={toggleAboutDropdown}
+                  className="text-gray-900 transition hover:text-gray-500/75"
+                >
                   About
+                </button>
+                {aboutDropdown && (
+                  <ul className="mt-2 space-y-2">
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-gray-900 transition hover:bg-gray-100"
+                      >
+                        Vision & Mission
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-gray-900 transition hover:bg-gray-100"
+                      >
+                        Principal's Message
+                      </a>
+                    </li>
+                  </ul>
+                )}
+              </li>
+              <li>
+                <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
+                  Facilities
                 </a>
               </li>
               <li>
                 <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
-                  Careers
+                  Staff
                 </a>
               </li>
               <li>
                 <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
-                  History
+                  Results
                 </a>
               </li>
               <li>
                 <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
-                  Blog
+                  Contact Us
                 </a>
               </li>
             </ul>
