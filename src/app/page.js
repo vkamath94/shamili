@@ -5,6 +5,7 @@ import Founders from '../components/Founders';
 import Principal from '@/components/Principal';
 import Subcard from '@/components/Sci_commerce';
 import ResultsDisplay from '@/components/ResDisplay';
+import Testimonial from '@/components/Testimonial';
 
 
 const page = () => {
@@ -20,6 +21,7 @@ const page = () => {
         altText1="Student 1 Result" 
         altText2="Student 2 Result" 
       />
+      <Testimonial/>
     </div>
   )
 }

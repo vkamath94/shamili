@@ -18,7 +18,7 @@ const Header = () => {
             <a className="block text-teal-600" href="#">
               <span className="sr-only">Home</span>
               <div className="h-8">
-                <Image src={Logo} alt="Logo" height={60} width={60} />
+                <Image src={Logo} alt="Logo" height={90} width={60} />
               </div>
             </a>
           </div>
