@@ -6,28 +6,25 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-
-export default function MediaCard() {
+export default function MediaCard({ image, title, description }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className="w-full h-full flex flex-col" sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
-        image="/Science.webp"
-        // Ensure the image is in the correct path
-        title="green iguana"
+        image={image}
+        title={title}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Science
+          {title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Combinations of Subject inlcude PCMCs(Computer Science),PCMB(Biology) or PCMS(Statistics) 
+          {description}
         </Typography>
       </CardContent>
       <CardActions>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-    
   );
 }
