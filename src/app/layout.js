@@ -1,6 +1,7 @@
 import Header from "@/app/Header";
 import "./globals.css";
 import Footer from "@/app/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   title: 'Shamili PU College',
