@@ -60,6 +60,11 @@ const Header = () => {
                   )}
                 </li>
                 <li>
+                  <a className="text-gray-900 transition hover:text-gray-500/75" href="/Courses">
+                    Courses
+                  </a>
+                </li>
+                <li>
                   <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
                     Facilities
                   </a>
@@ -139,8 +144,8 @@ const Header = () => {
                 )}
               </li>
               <li>
-                <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
-                  Academics
+                <a className="text-gray-900 transition hover:text-gray-500/75" href="/Courses">
+                  Courses
                 </a>
               </li>
               <li>

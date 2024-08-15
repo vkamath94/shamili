@@ -19,7 +19,7 @@ export default function CardContainer() {
         <MediaCard 
           image="/Commerce.jpeg" 
           title="Commerce" 
-          description="Combinations of Subject include ABES(Statistics) or ABECs(Computer Science)."
+          description="Combinations of Subject include EBAS(Statistics) or EBACs(Computer Science)."
         />
       </div>
     </div>

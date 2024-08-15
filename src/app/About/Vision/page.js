@@ -14,8 +14,10 @@ const playfair = Playfair({
 const page = () => {
   return (
     <>
-    <div className='mt-10 mb-10 pt-5 pb-5 flex justify-center text-center bg-slate-400'>
+    <div className='px-8 sm:px-6 lg:px-8'>
+    <div className='mt-8 mb-10 pt-5 pb-5 flex justify-center text-center bg-slate-400'>
     <h1 className={`${playfair.className} hover:underline text-3xl font-bold sm:text-4xl text-center`}> Vision Of the Institute</h1>
+    </div>
     </div>
     <p className={`${edu.className} p-20 flex justify-center text-center`}>Founded in 2010,Shamili Pre University 
         College stands as a beacon of hope and transformation for students from financially and socially disadvantaged

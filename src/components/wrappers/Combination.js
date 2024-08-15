@@ -23,7 +23,7 @@ export default function MediaCard({ image, title, description }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button className="hover:underline" size="small">Learn More</Button>
+        <Button className="hover:underline" size="small" href="/Courses">Learn More</Button>
       </CardActions>
     </Card>
   );
