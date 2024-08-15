@@ -42,8 +42,12 @@ const ContactPage = () => {
                 <br />
                 Fax: 0820-2530410
                 <br />
-                E-mail: <a href="mailto:principalmgmpu@gmail.com" className="text-blue-500 underline">principalmgmpu@gmail.com</a>
+                E-mails: 
+                <a href="mailto:su270.puc@gmail.com" className="text-blue-500 underline"> su270.puc@gmail.com</a>
+                <span> | </span>
+                <a href="mailto:shamilipuclg@example.com" className="text-blue-500 underline">shamilipuclg@gmail.com</a>
                 <br />
+
                 Cell: 9483363107
                 <br />
                 Cell: 9480633022
