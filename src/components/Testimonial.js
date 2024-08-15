@@ -49,7 +49,7 @@ const TestimonialSection = () => {
                   <div className="p-6 bg-gray-100 rounded-lg shadow-md text-center">
                     <p className="text-lg font-semibold text-gray-800">{testimonial.name}</p>
                     <p className="mt-4 text-gray-600">{testimonial.testimonial}</p>
-                    <p className="mt-4 text-gray-600">Batch: {testimonial.batch}</p>
+                    <p className="mt-4 text-gray-600">Batch of {testimonial.batch}</p>
                   </div>
                 </SwiperSlide>
               ))}

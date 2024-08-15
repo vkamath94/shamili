@@ -10,7 +10,7 @@ export default function CardContainer() {
     <div className="flex flex-wrap justify-center gap-4 p-4">
       <div className="w-full sm:w-80 md:w-96 lg:w-1/4">
         <MediaCard 
-          image="/Science.webp" 
+          image="/Science.jpeg" 
           title="Science" 
           description="Combinations of Subject include PCMCs(Computer Science) or PCMB(Biology)."
         />
