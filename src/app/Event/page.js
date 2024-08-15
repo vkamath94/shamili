@@ -18,6 +18,21 @@ const EventsPage = () => {
         '/Student_Council_5.jpeg'
       ]
     },
+    {
+        eventName: 'Literary Association Inaugration',
+        eventImages: [
+          '/Liter.jpeg',
+          '/Liter2.jpeg',
+          '/Liter3.jpeg',
+        ]
+      },
+      {
+        eventName: 'Independence Day 2024',
+        eventImages: [
+          '/Indp_2024.jpeg',
+          
+        ]
+      },
     // Add more events as needed
   ];
 
