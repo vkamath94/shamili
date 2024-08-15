@@ -5,6 +5,12 @@ const ResultsPage = () => {
   
   const resultsData = [
     {
+        year: '2024',
+        images: [
+          '/Top_2024_All.jpeg'
+        ]
+      },
+    {
       year: '2023',
       images: [
         '/Result2.jpeg',
