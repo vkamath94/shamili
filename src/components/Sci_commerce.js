@@ -12,7 +12,7 @@ export default function CardContainer() {
         <MediaCard 
           image="/Science.webp" 
           title="Science" 
-          description="Combinations of Subject include PCMCs(Computer Science), PCMB(Biology) or PCMS(Statistics)."
+          description="Combinations of Subject include PCMCs(Computer Science) or PCMB(Biology)."
         />
       </div>
       <div className="w-full sm:w-80 md:w-96 lg:w-1/4">
