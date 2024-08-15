@@ -179,6 +179,7 @@ const FacultyPage = () => {
             </div>
             <hr className="border-gray-300" />
 
+                 {/* Add more teaching staff here */}
           </div>
         </div>
 

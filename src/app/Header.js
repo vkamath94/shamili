@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-md">
+    <header id="header" className="bg-white shadow-md">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-1 flex items-center">
