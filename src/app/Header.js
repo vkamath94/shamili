@@ -164,7 +164,7 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a className="text-gray-900 transition hover:text-gray-500/75" href="#">
+                <a className="text-gray-900 transition hover:text-gray-500/75" href="/Contact">
                   Contact Us
                 </a>
               </li>
