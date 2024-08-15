@@ -90,12 +90,12 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a className="text-gray-900 transition hover:text-gray-600" href="#">
+                <a className="text-gray-900 transition hover:text-gray-600" href="/Results">
                   Results
                 </a>
               </li>
               <li>
-                <a className="text-gray-900 transition hover:text-gray-600" href="#">
+                <a className="text-gray-900 transition hover:text-gray-600" href="/Event">
                   Events
                 </a>
               </li>
@@ -155,12 +155,12 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a className="block px-4 py-2 text-gray-900 transition hover:bg-gray-100" href="#">
+                <a className="block px-4 py-2 text-gray-900 transition hover:bg-gray-100" href="/Results">
                   Results
                 </a>
               </li>
               <li>
-                <a className="block px-4 py-2 text-gray-900 transition hover:bg-gray-100" href="#">
+                <a className="block px-4 py-2 text-gray-900 transition hover:bg-gray-100" href="/Event">
                   Events
                 </a>
               </li>
