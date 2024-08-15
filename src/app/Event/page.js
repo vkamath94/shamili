@@ -19,7 +19,7 @@ const EventsPage = () => {
       ]
     },
     {
-        eventName: 'Literary Association Inaugaration',
+        eventName: 'Literary Association Inauguration',
         eventImages: [
           '/Liter.jpeg',
           '/Liter2.jpeg',
