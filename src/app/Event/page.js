@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 const EventsPage = () => {
   const eventData = [
     {
-      eventName: 'Student Council',
+      eventName:"Students' Council",
       eventImages: [
         '/Student_Council_4.jpeg',
         '/Student_Council_6.jpeg',
@@ -19,7 +19,7 @@ const EventsPage = () => {
       ]
     },
     {
-        eventName: 'Literary Association Inaugration',
+        eventName: 'Literary Association Inaugaration',
         eventImages: [
           '/Liter.jpeg',
           '/Liter2.jpeg',
