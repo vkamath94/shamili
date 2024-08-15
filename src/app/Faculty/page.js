@@ -20,7 +20,7 @@ const FacultyPage = () => {
             <div className="flex justify-between items-center">
               <p className="text-lg font-medium text-gray-900">
                 Prof. Raj Mohan
-                <span className="text-sm font-normal text-gray-600">, M.Sc, M.Phil., Principal</span>
+                <span className="text-sm font-normal text-gray-600">, M.Sc, M.Phil., Principal </span>
               </p>
               <p className="text-lg text-gray-600">Statistics</p>
             </div>
@@ -157,7 +157,7 @@ const FacultyPage = () => {
             <div className="flex justify-between items-center">
               <p className="text-lg font-medium text-gray-900">
                 Ms.Shailaja
-                <span className="text-sm font-normal text-gray-600">, M.A. (Eng). , B.Ed. </span>
+                <span className="text-sm font-normal text-gray-600">, M.A. (Eng)., M.A(Economics) , B.Ed. </span>
               </p>
               <p className="text-lg text-gray-600">Economics</p>
             </div>
