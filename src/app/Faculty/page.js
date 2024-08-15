@@ -125,7 +125,7 @@ const FacultyPage = () => {
             <div className="flex justify-between items-center">
               <p className="text-lg font-medium text-gray-900">
                 Ms.Vidya G Kamath
-                <span className="text-sm font-normal text-gray-600">, M.Sc., P.G.D.C. </span>
+                <span className="text-sm font-normal text-gray-600">, M.Sc., P.G.D.C.A </span>
               </p>
               <p className="text-lg text-gray-600">Computer Science</p>
             </div>
