@@ -19,15 +19,13 @@ const TestimonialSection = () => {
         batch:'2016-18'
     },
       {
-        name: 'Michael Johnson',
-        testimonial: 'Shamili PU College provided me with the resources and guidance I needed to excel academically. I highly recommend it.',
-      },
-      {
-        name: 'Emily Davis',
-        testimonial: 'The college has a fantastic learning environment and the staff are dedicated to helping students succeed. I am grateful for my time there.',
-      },
+        name: 'Thanisha Raviraj Amin',
+        testimonial: 'Being a student of Shamili Pre-University College, has been an amazing experience and it was a great place for me to learn and grow as a student. I give credit to my principal and lecturers for shaping me to become the person I am today. Experienced lecturers and good campus provied me with a positive learning environment. I am currently prusuing my Btech degree at NMAMIT.',
+        batch: '2021-23'
+    }
+]; 
       // Add more testimonials as needed
-    ];
+    
   
     return (
         <section className="bg-white py-12">
