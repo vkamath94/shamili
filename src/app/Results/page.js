@@ -5,11 +5,11 @@ const ResultsPage = () => {
   
   const resultsData = [
     {
-        year: '2024',
-        images: [
-          '/Top_2024_All.jpeg'
-        ]
-      },
+      year: '2024',
+      images: [
+        '/Top_2024_All.jpeg'
+      ]
+    },
     {
       year: '2023',
       images: [
@@ -38,13 +38,18 @@ const ResultsPage = () => {
             <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
               {result.year}
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"> {/* Increased gap for better spacing */}
               {result.images.map((image, imgIndex) => (
-                <div key={imgIndex} className="relative overflow-hidden rounded-lg shadow-lg aspect-w-4 aspect-h-3">
+                <div 
+                  key={imgIndex} 
+                  className="relative overflow-hidden rounded-lg shadow-lg" 
+                  style={{ width: '100%', height: '100%' }} // Ensure full container width and height
+                >
                   <img
                     src={image}
                     alt={`Result ${result.year} Image ${imgIndex + 1}`}
-                    className="object-cover w-full h-full"
+                    className="object-contain w-full h-full" // Maintain aspect ratio and scale properly
+                    style={{ maxWidth: '100%', maxHeight: '100%' }} // Ensure image fills the container
                   />
                 </div>
               ))}
