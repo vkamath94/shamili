@@ -36,11 +36,11 @@ const ContactPage = () => {
             <div>
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">Contact Numbers</h2>
               <p className="text-gray-700">
-                Off: 0820 – 2525165
+                {/*Off: 0820 – 2525165*/}
                 <br />
-                Off: 0820 – 2536417
+                {/*Off: 0820 – 2536417*/}
                 <br />
-                Fax: 0820-2530410
+                {/*Fax: 0820-2530410*/}
                 <br />
                 E-mails: 
                 <a href="mailto:su270.puc@gmail.com" className="text-blue-500 underline"> su270.puc@gmail.com</a>
@@ -48,9 +48,8 @@ const ContactPage = () => {
                 <a href="mailto:shamilipuclg@example.com" className="text-blue-500 underline">shamilipuclg@gmail.com</a>
                 <br />
 
-                Cell: 9483363107
-                <br />
-                Cell: 9480633022
+                Cell: 9945843120
+                
               </p>
             </div>
 
