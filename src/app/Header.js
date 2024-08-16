@@ -81,7 +81,7 @@ export const Header = () => {
                         <Link href="/Results" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl'>
                             Results
                         </Link>
-                        <Link href="/Events" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl'>
+                        <Link href="/Event" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl'>
                             Events
                         </Link>
                         <Link href="/Contact" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl'>
@@ -140,7 +140,7 @@ export const Header = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/Events" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300'>
+                            <Link href="/Event" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300'>
                                 Events
                             </Link>
                         </li>
