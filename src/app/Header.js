@@ -1,180 +1,146 @@
-'use client';
-import React, { useState } from 'react';
+"use client";
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Logo from '/public/logo.png';
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [aboutDropdown, setAboutDropdown] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+export const Header = () => {
+    const [MenuOpen, setMenuOpen] = useState(false);
+    const [AboutDropDown, setAboutDropDown] = useState(false);
+    const dropdownRef = useRef(null);
 
-  const toggleAboutDropdown = () => {
-    setAboutDropdown(!aboutDropdown);
-  };
+    const handleNav = () => {
+        setMenuOpen(!MenuOpen);
+    };
 
-  return (
-    <header id="header" className="bg-slate-700 shadow-md">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <a className="flex items-center" href="/">
-            <Image src={Logo} alt="Logo" height={50} width={50} />
-            <span className="text-white text-2xl font-semibold ml-3">Shamili PU College</span>
-          </a>
+    const toggleAbout = () => {
+        setAboutDropDown(!AboutDropDown);
+    };
 
-          {/* Hamburger Menu Button */}
-          <button
-            onClick={toggleMenu}
-            className="md:hidden p-2 text-gray-300 rounded-lg focus:outline-none"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setAboutDropDown(false);
+            }
+        };
 
-          {/* Navbar for Larger Screens */}
-          <nav className="hidden md:flex md:items-center md:gap-6">
-            <ul className="flex items-center gap-6 text-sm text-white">
-              <li className="relative">
-                <button
-                  onClick={toggleAboutDropdown}
-                  className="transition hover:text-gray-300"
-                >
-                  About
-                </button>
-                {aboutDropdown && (
-                  <ul className="absolute left-0 mt-2 w-40 bg-slate-600 shadow-lg border border-gray-200">
-                    <li>
-                      <a
-                        href="/About/Vision"
-                        className="block px-4 py-2 text-white transition hover:bg-slate-500"
-                      >
-                        Vision & Mission
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/About/Message"
-                        className="block px-4 py-2 text-white transition hover:bg-slate-500"
-                      >
-                        Principal's Message
-                      </a>
-                    </li>
-                  </ul>
-                )}
-              </li>
-              <li>
-                <a className="transition hover:text-gray-300" href="/Courses">
-                  Courses
-                </a>
-              </li>
-              <li>
-                <a className="transition hover:text-gray-300" href="/Facilities">
-                  Facilities
-                </a>
-              </li>
-              <li>
-                <a className="transition hover:text-gray-300" href="/Faculty">
-                  Faculty
-                </a>
-              </li>
-              <li>
-                <a className="transition hover:text-gray-300" href="/Results">
-                  Results
-                </a>
-              </li>
-              <li>
-                <a className="transition hover:text-gray-300" href="/Event">
-                  Events
-                </a>
-              </li>
-              <li>
-                <a className="transition hover:text-gray-300" href="/Contact">
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
 
-        {/* Navbar for Smaller Screens */}
-        {isOpen && (
-          <nav className="md:hidden">
-            <ul className="mt-2 flex flex-col text-sm text-white bg-slate-700 rounded-lg">
-              <li className="relative">
-                <button
-                  onClick={toggleAboutDropdown}
-                  className="w-full text-left px-4 py-2 transition hover:bg-slate-600"
-                >
-                  About
-                </button>
-                {aboutDropdown && (
-                  <ul className="mt-2 space-y-2 bg-slate-600 rounded-lg">
-                    <li>
-                      <a
-                        href="/About/Vision"
-                        className="block px-4 py-2 transition hover:bg-slate-500"
-                      >
-                        Vision & Mission
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/About/Message"
-                        className="block px-4 py-2 transition hover:bg-slate-500"
-                      >
-                        Principal's Message
-                      </a>
-                    </li>
-                  </ul>
-                )}
-              </li>
-              <li>
-                <a className="block px-4 py-2 transition hover:bg-slate-600" href="/Courses">
-                  Courses
-                </a>
-              </li>
-              <li>
-                <a className="block px-4 py-2 transition hover:bg-slate-600" href="/Facilities">
-                  Facilities
-                </a>
-              </li>
-              <li>
-                <a className="block px-4 py-2 transition hover:bg-slate-600" href="/Faculty">
-                  Faculty
-                </a>
-              </li>
-              <li>
-                <a className="block px-4 py-2 transition hover:bg-slate-600" href="/Results">
-                  Results
-                </a>
-              </li>
-              <li>
-                <a className="block px-4 py-2 transition hover:bg-slate-600" href="/Event">
-                  Events
-                </a>
-              </li>
-              <li>
-                <a className="block px-4 py-2 transition hover:bg-slate-600" href="/Contact">
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-          </nav>
-        )}
-      </div>
-    </header>
-  );
+    return (
+        <nav className="static w-full h-20 shadow-xl bg-white z-10">
+            <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
+                <div>
+                    <Link href="/">
+                        <Image 
+                            src={Logo}
+                            alt="Logo"
+                            width={90}
+                            height={40}
+                            className='cursor-pointer'
+                        />
+                    </Link>
+                </div>
+                <div className='hidden sm:flex'>
+                    <ul className='hidden sm:flex'>
+                        <div className='relative' ref={dropdownRef}>
+                            <li 
+                                onClick={toggleAbout} 
+                                className='ml-10 uppercase hover:border-b-2 hover:border-slate-500 text-xl cursor-pointer'
+                            >
+                                About
+                            </li>
+                            {AboutDropDown && (
+                                <ul className='absolute top-12 left-0 bg-white shadow-lg rounded-md'>
+                                    <Link href="/About/Vision">
+                                        <li className='px-10 py-2 hover:bg-slate-100'>Vision</li>
+                                    </Link>
+                                    <Link href="/About/Message">
+                                        <li className='px-10 py-2 hover:bg-slate-100'>Principal's Message</li>
+                                    </Link>
+                                </ul>
+                            )}
+                        </div>
+                        <Link href="/Courses">
+                            <li className='ml-10 uppercase hover:border-b-2 hover:border-slate-500 text-xl'>Courses</li>
+                        </Link>
+                        <Link href="/Facilities">
+                            <li className='ml-10 uppercase hover:border-b-2 hover:border-slate-500 text-xl'>Facilities</li>
+                        </Link>
+                        <Link href="/Faculty">
+                            <li className='ml-10 uppercase hover:border-b-2 hover:border-slate-500 text-xl'>Faculty</li>
+                        </Link>
+                        <Link href="/Results">
+                            <li className='ml-10 uppercase hover:border-b-2 hover:border-slate-500 text-xl'>Results</li>
+                        </Link>
+                        <Link href="/Event">
+                            <li className='ml-10 uppercase hover:border-b-2 hover:border-slate-500 text-xl'>Events</li>
+                        </Link>
+                        <Link href="/Contact">
+                            <li className='ml-10 uppercase hover:border-b-2 hover:border-slate-500 text-xl'>Contact</li>
+                        </Link>
+                    </ul>
+                </div>
+                <div onClick={handleNav} className='sm:hidden cursor-pointer'>
+                    <AiOutlineMenu size={25}/>
+                </div>
+            </div>
+            <div className={
+                MenuOpen ? "fixed left-0 top-0 w-[65%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 z-10"
+                : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+            }>
+                <div className='flex w-full items-center justify-end'>
+                    <div onClick={handleNav} className='cursor-pointer'>
+                        <AiOutlineClose size={25}/>
+                    </div>
+                </div>
+                <div className='flex-col py-4'>
+                    <ul>
+                        <Link href="/">
+                            <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer border-b border-slate-300'>Home</li>
+                        </Link>
+                        <li className='py-4 cursor-pointer border-b border-slate-300'>
+                            <div onClick={toggleAbout} className='flex justify-between items-center'>
+                                <span>About</span>
+                                <span>{AboutDropDown ? '-' : '+'}</span>
+                            </div>
+                            {AboutDropDown && (
+                                <ul className='pl-4'>
+                                    <Link href="/About/Vision">
+                                        <li onClick={() => setMenuOpen(false)} className='py-5 border-b border-slate-300'>Vision</li>
+                                    </Link>
+                                    <Link href="/About/Message">
+                                        <li onClick={() => setMenuOpen(false)} className='py-5 border-b border-slate-300'>Principal's Message</li>
+                                    </Link>
+                                </ul>
+                            )}
+                        </li>
+                        <Link href="/Courses">
+                            <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer border-b border-slate-300'>Courses</li>
+                        </Link>
+                        <Link href="/Facilities">
+                            <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer border-b border-slate-300'>Facilities</li>
+                        </Link>
+                        <Link href="/Faculty">
+                            <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer border-b border-slate-300'>Faculty</li>
+                        </Link>
+                        <Link href="/Results">
+                            <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer border-b border-slate-300'>Results</li>
+                        </Link>
+                        <Link href="/Events">
+                            <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer border-b border-slate-300'>Events</li>
+                        </Link>
+                        <Link href="/Contact">
+                            <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer border-b border-slate-300'>Contact</li>
+                        </Link>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    );
 };
-
-export default Header;

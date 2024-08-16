@@ -1,7 +1,7 @@
-import Header from "@/app/Header";
+import { Header } from '@/app/Header';
+import Footer from '@/app/Footer';
 import "./globals.css";
-import Footer from "@/app/Footer";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: 'Shamili PU College',
@@ -13,15 +13,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    
     <html lang="en">
       <body>
         <Header />
         {children}
         <Footer />
-        <SpeedInsights/>
+        <SpeedInsights />
       </body>
     </html>
-    
   );
 }

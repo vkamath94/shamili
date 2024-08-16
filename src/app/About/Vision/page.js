@@ -1,15 +1,7 @@
 import React from 'react';
-import { Edu_VIC_WA_NT_Beginner, Playfair } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 
-const edu = Edu_VIC_WA_NT_Beginner({
-  subsets: ['latin'],
-  weights: [200, 300],
-});
 
-const playfair = Playfair({
-  subsets: ['latin'],
-  weights: [400, 700],
-});
 
 const Page = () => {
   return (
@@ -17,14 +9,14 @@ const Page = () => {
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <div className="inline-block bg-slate-400 py-3 px-6 rounded-full">
-            <h1 className={`${playfair.className} hover:underline text-3xl font-bold text-white sm:text-4xl`}>
+            <h1 className='hover:underline text-3xl font-bold text-white sm:text-4xl'>
               Vision Of the Institute
             </h1>
           </div>
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-lg">
-          <p className={`${edu.className} text-lg text-gray-700 leading-relaxed`}>
+          <p className=' text-lg text-gray-700 leading-relaxed'>
             Founded in 2010, Shamili Pre University College stands as a beacon of hope and transformation for students from financially and socially disadvantaged backgrounds. The College is the brainchild of Nadoja Dr. G. Shankar, a philanthropist and social reformer committed to improving lives through education.
             <br />
             <br />
