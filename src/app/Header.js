@@ -51,12 +51,12 @@ export const Header = () => {
                         <div className='relative' ref={dropdownRef}>
                             <li 
                                 onClick={toggleAbout} 
-                                className='uppercase hover:border-b-2 hover:border-slate-500 text-xl cursor-pointer text-white'
+                                className='uppercase hover:border-b-2 hover:border-slate-500 text-xl cursor-pointer text-black'
                             >
                                 About
                             </li>
                             {aboutDropDown && (
-                                <ul className='absolute top-full left-0 mt-2 bg-black bg-opacity-80 shadow-lg rounded-md'>
+                                <ul className='absolute top-full left-0 mt-2 bg-grey bg-opacity-80 shadow-lg rounded-md'>
                                     <li>
                                         <Link href="/About/Vision" className='block px-10 py-2 hover:bg-slate-100'>
                                             Vision
