@@ -32,7 +32,7 @@ export const Header = () => {
     }, []);
 
     return (
-        <nav  id="header" className="static w-full h-20 shadow-xl bg-slate-400 bg-opacity-90 z-10">
+        <nav  id="header" className="static w-full h-20 shadow-xl bg-slate-100 bg-opacity-20 z-10">
             <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
                 <div className='flex items-center'>
                     <Link href="/">
@@ -44,7 +44,7 @@ export const Header = () => {
                             className='cursor-pointer'
                         />
                     </Link>
-                    <span className='ml-4 text-2xl font-semibold text-white'>Shamili PU College</span>
+                    <span className='ml-4 text-2xl font-semibold text-black'>Shamili PU College</span>
                 </div>
                 <div className='hidden sm:flex'>
                     <ul className='flex space-x-10'>
@@ -70,28 +70,28 @@ export const Header = () => {
                                 </ul>
                             )}
                         </div>
-                        <Link href="/Courses" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-white'>
+                        <Link href="/Courses" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-black'>
                             Courses
                         </Link>
-                        <Link href="/Facilities" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-white'>
+                        <Link href="/Facilities" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-black'>
                             Facilities
                         </Link>
-                        <Link href="/Faculty" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-white'>
+                        <Link href="/Faculty" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-black'>
                             Faculty
                         </Link>
-                        <Link href="/Results" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-white'>
+                        <Link href="/Results" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-black'>
                             Results
                         </Link>
-                        <Link href="/Event" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-white'>
+                        <Link href="/Event" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-black'>
                             Events
                         </Link>
-                        <Link href="/Contact" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-white'>
+                        <Link href="/Contact" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-black'>
                             Contact
                         </Link>
                     </ul>
                 </div>
                 <div onClick={handleNav} className='sm:hidden cursor-pointer'>
-                    <AiOutlineMenu size={25} color="white"/>
+                    <AiOutlineMenu size={25} color="black"/>
                 </div>
             </div>
             <div className={
