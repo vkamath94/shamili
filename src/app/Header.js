@@ -51,7 +51,7 @@ export const Header = () => {
                         <div className='relative' ref={dropdownRef}>
                             <li 
                                 onClick={toggleAbout} 
-                                className='uppercase hover:border-b-2 hover:border-slate-500 text-xl cursor-pointer text-black'
+                                className=' hover:border-b-2 hover:border-slate-500 text-xl cursor-pointer text-black'
                             >
                                 About
                             </li>
@@ -70,22 +70,22 @@ export const Header = () => {
                                 </ul>
                             )}
                         </div>
-                        <Link href="/Courses" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-black'>
+                        <Link href="/Courses" className=' hover:border-b-2 hover:border-slate-500 text-xl text-black'>
                             Courses
                         </Link>
-                        <Link href="/Facilities" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-black'>
+                        <Link href="/Facilities" className=' hover:border-b-2 hover:border-slate-500 text-xl text-black'>
                             Facilities
                         </Link>
-                        <Link href="/Faculty" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-black'>
+                        <Link href="/Faculty" className=' hover:border-b-2 hover:border-slate-500 text-xl text-black'>
                             Faculty
                         </Link>
-                        <Link href="/Results" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-black'>
+                        <Link href="/Results" className=' hover:border-b-2 hover:border-slate-500 text-xl text-black'>
                             Results
                         </Link>
-                        <Link href="/Event" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-black'>
+                        <Link href="/Event" className=' hover:border-b-2 hover:border-slate-500 text-xl text-black'>
                             Events
                         </Link>
-                        <Link href="/Contact" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-black'>
+                        <Link href="/Contact" className=' hover:border-b-2 hover:border-slate-500 text-xl text-black'>
                             Contact
                         </Link>
                     </ul>

@@ -11,6 +11,12 @@ const ResultsPage = () => {
       ]
     },
     {
+      year:'NEET 2023 Achiever',
+      images:[
+        '/Neet_top.jpeg'
+      ]
+    },
+    {
       year: '2023',
       images: [
         '/Result2.jpeg',

@@ -19,6 +19,7 @@ const FacilitiesPage = () => {
           <li>Well-equipped laboratories, spacious auditorium, and library</li>
           <li>Fee concession for those who have scored 90% and 85% marks in SSLC</li>
           <li>Free Mid-day meals facility</li>
+          <li>Dedicated Faculty for NEET/JEE/CET Coaching</li>
         </ul>
 
         {/* Labs Section */}
