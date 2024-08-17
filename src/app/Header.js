@@ -32,9 +32,9 @@ export const Header = () => {
     }, []);
 
     return (
-        <nav className="static w-full h-20 shadow-xl bg-white z-10">
+        <nav  id="header" className="static w-full h-20 shadow-xl bg-slate-400 bg-opacity-90 z-10">
             <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
-                <div>
+                <div className='flex items-center'>
                     <Link href="/">
                         <Image 
                             src={Logo}
@@ -44,18 +44,19 @@ export const Header = () => {
                             className='cursor-pointer'
                         />
                     </Link>
+                    <span className='ml-4 text-2xl font-semibold text-white'>Shamili PU College</span>
                 </div>
                 <div className='hidden sm:flex'>
                     <ul className='flex space-x-10'>
                         <div className='relative' ref={dropdownRef}>
                             <li 
                                 onClick={toggleAbout} 
-                                className='uppercase hover:border-b-2 hover:border-slate-500 text-xl cursor-pointer'
+                                className='uppercase hover:border-b-2 hover:border-slate-500 text-xl cursor-pointer text-white'
                             >
                                 About
                             </li>
                             {aboutDropDown && (
-                                <ul className='absolute top-full left-0 mt-2 bg-white shadow-lg rounded-md'>
+                                <ul className='absolute top-full left-0 mt-2 bg-black bg-opacity-80 shadow-lg rounded-md'>
                                     <li>
                                         <Link href="/About/Vision" className='block px-10 py-2 hover:bg-slate-100'>
                                             Vision
@@ -69,83 +70,83 @@ export const Header = () => {
                                 </ul>
                             )}
                         </div>
-                        <Link href="/Courses" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl'>
+                        <Link href="/Courses" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-white'>
                             Courses
                         </Link>
-                        <Link href="/Facilities" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl'>
+                        <Link href="/Facilities" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-white'>
                             Facilities
                         </Link>
-                        <Link href="/Faculty" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl'>
+                        <Link href="/Faculty" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-white'>
                             Faculty
                         </Link>
-                        <Link href="/Results" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl'>
+                        <Link href="/Results" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-white'>
                             Results
                         </Link>
-                        <Link href="/Event" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl'>
+                        <Link href="/Event" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-white'>
                             Events
                         </Link>
-                        <Link href="/Contact" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl'>
+                        <Link href="/Contact" className='uppercase hover:border-b-2 hover:border-slate-500 text-xl text-white'>
                             Contact
                         </Link>
                     </ul>
                 </div>
                 <div onClick={handleNav} className='sm:hidden cursor-pointer'>
-                    <AiOutlineMenu size={25}/>
+                    <AiOutlineMenu size={25} color="white"/>
                 </div>
             </div>
             <div className={
-                menuOpen ? "fixed left-0 top-0 w-[65%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 z-10"
+                menuOpen ? "fixed left-0 top-0 w-[65%] h-screen bg-black bg-opacity-80 p-10 ease-in duration-500 z-10"
                 : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
             }>
                 <div className='flex w-full items-center justify-end'>
                     <div onClick={handleNav} className='cursor-pointer'>
-                        <AiOutlineClose size={25}/>
+                        <AiOutlineClose size={25} color="white"/>
                     </div>
                 </div>
                 <div className='flex-col py-4'>
                     <ul>
                         <li>
-                            <Link href="/" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300'>
+                            <Link href="/" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300 text-white'>
                                 Home
                             </Link>
                         </li>
                         <li>
-                            <Link href="/About/Vision" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300'>
+                            <Link href="/About/Vision" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300 text-white'>
                                 Vision
                             </Link>
                         </li>
-                        <li className='py-4 '>
-                            <Link href="/About/Message" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300'>
+                        <li className='py-4'>
+                            <Link href="/About/Message" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300 text-white'>
                                 Principal's Message
                             </Link>
                         </li>
                         <li>
-                            <Link href="/Courses" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300'>
+                            <Link href="/Courses" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300 text-white'>
                                 Courses
                             </Link>
                         </li>
                         <li>
-                            <Link href="/Facilities" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300'>
+                            <Link href="/Facilities" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300 text-white'>
                                 Facilities
                             </Link>
                         </li>
                         <li>
-                            <Link href="/Faculty" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300'>
+                            <Link href="/Faculty" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300 text-white'>
                                 Faculty
                             </Link>
                         </li>
                         <li>
-                            <Link href="/Results" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300'>
+                            <Link href="/Results" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300 text-white'>
                                 Results
                             </Link>
                         </li>
                         <li>
-                            <Link href="/Event" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300'>
+                            <Link href="/Event" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300 text-white'>
                                 Events
                             </Link>
                         </li>
                         <li>
-                            <Link href="/Contact" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300'>
+                            <Link href="/Contact" onClick={() => setMenuOpen(false)} className='block py-4 cursor-pointer border-b border-slate-300 text-white'>
                                 Contact
                             </Link>
                         </li>
