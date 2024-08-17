@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 const EventsPage = () => {
   const eventData = [
     {
-      eventName:"Students' Council",
+      eventName: "Students' Council",
       eventImages: [
         '/Student_Council_4.jpeg',
         '/Student_Council_6.jpeg',
@@ -19,20 +19,22 @@ const EventsPage = () => {
       ]
     },
     {
-        eventName: 'Literary Association Inauguration',
-        eventImages: [
-          '/Liter.jpeg',
-          '/Liter2.jpeg',
-          '/Liter3.jpeg',
-        ]
-      },
-      {
-        eventName: 'Independence Day 2024',
-        eventImages: [
-          '/Indp_2024.jpeg',
-          
-        ]
-      },
+      eventName: 'Literary Association Inauguration',
+      eventImages: [
+        '/Liter.jpeg',
+        '/Liter2.jpeg',
+        '/Liter3.jpeg',
+      ]
+    },
+    {
+      eventName: 'Independence Day 2024',
+      eventImages: [
+        '/Indp_2024.jpeg',
+      ],
+      eventVideo: '/Idp_2024_vid.mp4',  // Replace with your video path
+      videoWidth: "1600",  // Custom width
+      videoHeight: "1024"  // Custom height
+    },
     // Add more events as needed
   ];
 
@@ -48,6 +50,8 @@ const EventsPage = () => {
             key={index}
             eventName={event.eventName}
             eventImages={event.eventImages}
+            eventVideo={event.eventVideo}
+              // Pass custom height if needed
           />
         ))}
       </div>
