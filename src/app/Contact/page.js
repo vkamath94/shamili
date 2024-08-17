@@ -12,7 +12,7 @@ const ContactPage = () => {
             <div>
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">Address</h2>
               <p className="text-gray-700">
-                Kidiyoor, Udupi,
+                Shamili PU College,Kidiyoor, Udupi,
                 <br />
                 Karnataka, India
                 <br />
@@ -23,11 +23,11 @@ const ContactPage = () => {
             <div>
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">Office Timings</h2>
               <p className="text-gray-700">
-                Morning Session: 9.00 a.m. to 1.00 p.m.
+                Monday to Friday: 9.00 a.m. to 4.00 p.m.
                 <br />
-                Afternoon Session: 2.00 p.m. to 5.00 p.m.
+                Saturday: 9.00 a.m to 1.00 p.m
                 <br />
-                (On Saturdays, the College working hours are 9.00 a.m. to 1.00 p.m.)
+                College remains closed on Sunday
               </p>
             </div>
           </div>
@@ -36,12 +36,7 @@ const ContactPage = () => {
             <div>
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">Contact</h2>
               <p className="text-gray-700">
-                {/*Off: */}
-                <br />
-                {/*Off: */}
-                <br />
-                {/*Fax: */}
-                <br />
+            
                 E-mails: 
                 <a href="mailto:su270.puc@gmail.com" className="text-blue-500 underline"> su270.puc@gmail.com</a>
                 <span> | </span>
