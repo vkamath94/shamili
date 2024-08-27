@@ -12,7 +12,7 @@ const ContactPage = () => {
             <div>
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">Address</h2>
               <p className="text-gray-700">
-                Shamili PU College,Kidiyoor, Udupi,
+                Shyamili PU College,Kidiyoor, Udupi,
                 <br />
                 Karnataka, India
                 <br />
