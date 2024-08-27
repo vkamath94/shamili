@@ -44,7 +44,7 @@ export const Header = () => {
                             className='cursor-pointer'
                         />
                     </Link>
-                    <span className='ml-4 text-2xl font-semibold text-black'>Shamili PU College</span>
+                    <span className='ml-4 text-2xl font-semibold text-black'>Shyamili PU College</span>
                 </div>
                 <div className='hidden sm:flex'>
                     <ul className='flex space-x-10'>
